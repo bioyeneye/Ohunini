@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohunini.Api", "Ohunini.Api\Ohunini.Api.csproj", "{C04E3156-DD4E-440E-B907-2A61AF69CDFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohunini.Business", "Ohunini.Business\Ohunini.Business.csproj", "{C4D61571-3B70-415A-9A49-754B25F32801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohunini.DataAccess", "Ohunini.DataAccess\Ohunini.DataAccess.csproj", "{7ABB705A-3411-4FCB-A53D-B5C7DAD60599}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C04E3156-DD4E-440E-B907-2A61AF69CDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04E3156-DD4E-440E-B907-2A61AF69CDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04E3156-DD4E-440E-B907-2A61AF69CDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04E3156-DD4E-440E-B907-2A61AF69CDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D61571-3B70-415A-9A49-754B25F32801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D61571-3B70-415A-9A49-754B25F32801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D61571-3B70-415A-9A49-754B25F32801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D61571-3B70-415A-9A49-754B25F32801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABB705A-3411-4FCB-A53D-B5C7DAD60599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABB705A-3411-4FCB-A53D-B5C7DAD60599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABB705A-3411-4FCB-A53D-B5C7DAD60599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABB705A-3411-4FCB-A53D-B5C7DAD60599}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

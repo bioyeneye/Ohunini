@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ohunini.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Ohunini.Api.Controllers.BaseController">
+            <inheritdoc />
+        </member>
+        <member name="M:Ohunini.Api.Controllers.BaseController.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <inheritdoc />
+        </member>
+        <member name="P:Ohunini.Api.Controllers.BaseController.CurrentUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ohunini.Api.Controllers.v1.UserProfileController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ohunini.Api.Controllers.v1.UserProfileController.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILogger{Ohunini.Api.Controllers.v1.UserProfileController})">
+            <inheritdoc />
+        </member>
+        <member name="M:Ohunini.Api.Controllers.v1.UserProfileController.GetUserProfileById(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ohunini.Api.Extensions.ApplicationBuilderExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ohunini.Api.Extensions.ApplicationBuilderExtensions.UseConfigureSecurityHeaders(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Helper for configuring security header
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ohunini.Api.Extensions.ApplicationBuilderExtensions.ApplicationSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Middleware for swagger, call this to add custom swagger to the middleware pipeline
+            </summary>
+            <param name="app"></param>
+            <param name="provider"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ohunini.Api.Extensions.MvcOptionsExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Ohunini.Api.Extensions.ServiceCollectionExtensions">
+            <summary>
+            Common service configuration for service projects
+            </summary>
+        </member>
+        <member name="M:Ohunini.Api.Extensions.ServiceCollectionExtensions.AddEmailSenders(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Add email senders - configuration of sendgrid, smtp senders
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Ohunini.Api.Extensions.ServiceCollectionExtensions.ConfigureVersioning(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure versioning
+            </summary>
+            <param name="this"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ohunini.Api.Extensions.ServiceCollectionExtensions.AddApplicationService(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Configure application services
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Ohunini.Api.Extensions.ServiceCollectionExtensions.AddApplicationApiConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Helps with api configuration like making url lowercase, date formating, model state validation 
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ohunini.Api.Extensions.ServiceCollectionExtensions.AddSwaggerDoc(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Configure swagger for api project
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ohunini.Api.Extensions.ServiceCollectionExtensions.AddApplicationAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean)">
+            <summary>
+            Service configuration for authentication
+            </summary>
+            <param name="services">Service collection(core)</param>
+            <param name="configuration">Configuration</param>
+            <param name="serviceLevel">Flag for token signing validation</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ohunini.Api.Filters.ApiVersionRoutePrefixConvention">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ohunini.Api.Filters.ApiVersionRoutePrefixConvention.Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModel)">
+            <summary>
+            
+            </summary>
+            <param name="application"></param>
+        </member>
+        <member name="T:Ohunini.Api.Filters.ConfigureSwaggerOptions">
+            <inheritdoc />
+        </member>
+        <member name="M:Ohunini.Api.Filters.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Ohunini.Api.Filters.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="T:Ohunini.Api.Filters.SwaggerDefaultValues">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ohunini.Api.Filters.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Ohunini.Api.Filters.ValidateModelStateActionFilter">
+            <inheritdoc />
+        </member>
+        <member name="M:Ohunini.Api.Filters.ValidateModelStateActionFilter.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <inheritdoc />
+        </member>
+        <member name="T:Ohunini.Api.Filters.VersioningErrorResponseProvider">
+            <inheritdoc />
+        </member>
+        <member name="M:Ohunini.Api.Filters.VersioningErrorResponseProvider.CreateResponse(Microsoft.AspNetCore.Mvc.Versioning.ErrorResponseContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Ohunini.Api.Middlewares.SecurityHeadersMiddleware">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Ohunini.Api.Middlewares.SecurityHeadersMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:Ohunini.Api.Middlewares.SecurityHeadersMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Fudoora.Common.Filters.EnumSchemaFilter">
+            <summary>
+            Enum filter for swagger
+            </summary>
+        </member>
+        <member name="M:Fudoora.Common.Filters.EnumSchemaFilter.Apply(Microsoft.OpenApi.Models.OpenApiSchema,Swashbuckle.AspNetCore.SwaggerGen.SchemaFilterContext)">
+            <summary>
+            Caller action for the enum filter
+            </summary>
+            <param name="model"></param>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>
