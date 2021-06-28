@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>netcoreapp5.0</TargetFramework>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -36,6 +36,12 @@
       <None Update="Ohunini.Api.xml">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+        <HintPath>..\..\..\..\..\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\5.0.0\ref\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
